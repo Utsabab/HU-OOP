@@ -1,5 +1,37 @@
 package org.howard.edu.lsp.assignment2.combination;
+import java.util.*;
 
 public class combination {
-
+	ArrayList<int[]> ans = new ArrayList<int[]>();
+	
+	public void combos(int[] curr, int[] inpt, int ind, int target) {
+//		for(int j=0; j<curr.length; j++) {
+//			System.out.println(curr[j]);
+//		}
+//		System.out.println("Done");
+		int sum = 0;
+		for(int i = 0; i < curr.length; i++) {
+			sum += curr[i];
+		}
+		
+		if (curr.length != 0 && sum == target) {
+			System.out.println("Say what");
+			ans.add(curr);
+		}
+		
+		for (int i = ind; i < inpt.length; i++) {
+			curr = Arrays.copyOf(curr, curr.length + 1);
+			curr[curr.length - 1] = inpt[i];
+			combos(curr, inpt, i+1, target);
+			curr = Arrays.copyOf(curr, curr.length - 1);
+		}
+		
+		return;
+	}
+	
+	public ArrayList<int []> findCombinations(int[] inpt, int target) {
+		int[] curr = new int[]{};
+		combos(curr,inpt,0, target);
+		return(ans);
+	}
 }
