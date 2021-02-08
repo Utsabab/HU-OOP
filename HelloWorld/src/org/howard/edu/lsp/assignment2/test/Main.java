@@ -10,11 +10,9 @@ import org.howard.edu.lsp.assignment2.combination.Implementation;
  */
 public class Main{
 	/**
-	 * 
 	 * This is the main method which makes use of findCombinations method from Implementation class located in combination package.
-	 * @param args Unused.
-	 * @return Nothing.
-	 * 
+	 * @param args Unused
+	 * @return Nothing
 	 */
 	public static void main(String[] args){
 		Implementation comb = new Implementation();

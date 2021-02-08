@@ -23,10 +23,10 @@ public class Implementation {
 	 * recursively call itself to find the combination set which adds up to target value, append to the final ans, and 
 	 * pop the element to find other combinations.
 	 * 
-	 * @param curr     The int array with possible combination which sums to target.
-	 * @param inpt     The int array as an input consisting of integer values.
-	 * @param ind      The int variable indicating which index to start from in the array inpt to form combination set. 
-	 * @param target   The int variable indicating the target.
+	 * @param curr     The int array with possible combination which sums to target
+	 * @param inpt     The int array as an input consisting of integer values
+	 * @param ind      The int variable indicating which index to start from in the array inpt to form combination set
+	 * @param target   The int variable indicating the target
 	 */
 	public void combos(int[] curr, int[] inpt, int ind, int target) {
 		int sum = 0;
@@ -53,9 +53,9 @@ public class Implementation {
 	 * This method simply takes in the arguments and calls the method combos for the results. 
 	 * For each input array, this method generates the result, and prints the input array, target, and the result in the console in that order.
 	 * 
-	 * @param curr     The int array with possible combination which sums to target.
-	 * @param inpt     The int array as an input consisting of integer values.
-	 * @param ind      The int variable indicating which index to start from in the array inpt to form combination set.
+	 * @param curr     The int array with possible combination which sums to target
+	 * @param inpt     The int array as an input consisting of integer values
+	 * @param ind      The int variable indicating which index to start from in the array inpt to form combination set
 	 * @param target   The int variable indicating the target.
 	 */
 	public void process(int[] curr, int[] inpt, int ind, int target) {
