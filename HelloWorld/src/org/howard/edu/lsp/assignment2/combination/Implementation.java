@@ -68,6 +68,7 @@ public class Implementation {
 		}
 		
 		System.out.println("The input int array is: ");
+		
 		System.out.print("[");	
 		for(int i=0; i<inpt.length; i++) {
 			if (i == inpt.length - 1) {
