@@ -2,8 +2,19 @@ package org.howard.edu.lsp.assignment4.test;
 import org.howard.edu.lsp.assignment4.implementation.IntegerSet;
 import java.util.ArrayList;
 
-
+/**
+ * The Main class has main method which invokes methods from the IntegerSet class.
+ * 
+ * @author Utsab Khakurel
+ * @version 1.0
+ * @since 2021-03-04
+ */
 public class main {
+	/**
+	 * This is the main method which makes use of all the methods from IntegerSet class located in implementation package.
+	 * 
+	 * @param args Unused
+	 */
 	public static void main(String[] args){
 		ArrayList<Integer> SetA = new ArrayList<Integer>();
 		SetA.add(1);
