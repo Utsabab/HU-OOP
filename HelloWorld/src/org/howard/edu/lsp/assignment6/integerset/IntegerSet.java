@@ -1,4 +1,4 @@
-package org.howard.edu.lsp.assignment4.implementation;
+package org.howard.edu.lsp.assignment6.integerset;
 import java.util.*;
 
 /**
@@ -14,16 +14,16 @@ import java.util.*;
 
 public class IntegerSet {
 	//Private variable set of type ArrayList which behaves like set.
-	private ArrayList<Integer> set;
+	private ArrayList<Integer> set = new ArrayList<Integer>();
 	
 	/**
 	 * Initializes set with the newset sent as a parameter.
 	 * 
 	 * @param newset 	The ArrayList sent through the main function
 	 */
-	public IntegerSet(ArrayList<Integer> newset) {
-		 set = newset; 	
-	}
+//	public IntegerSet(ArrayList<Integer> newset) {
+//		 set = newset; 	
+//	}
 	
 	/**
 	 * This method clears the set and initializes it with empty ArrayList.

@@ -1,5 +1,5 @@
-package org.howard.edu.lsp.assignment4.test;
-import org.howard.edu.lsp.assignment4.implementation.IntegerSet;
+package org.howard.edu.lsp.assignment6.integerset;
+
 import java.util.ArrayList;
 
 /**
@@ -9,26 +9,31 @@ import java.util.ArrayList;
  * @version 1.0
  * @since 2021-03-04
  */
-public class main {
+public class Main {
 	/**
 	 * This is the main method which makes use of all the methods from IntegerSet class located in implementation package.
 	 * 
 	 * @param args Unused
 	 */
 	public static void main(String[] args){
-		ArrayList<Integer> SetA = new ArrayList<Integer>();
-		SetA.add(1);
-		SetA.add(2);
-		SetA.add(3);
-		SetA.add(6);
-		
-		ArrayList<Integer> SetB = new ArrayList<Integer>();
-		SetB.add(1);
-		SetB.add(2);
-		SetB.add(6);
-		SetB.add(7);
-		IntegerSet Set1 = new IntegerSet(SetA);
-		IntegerSet Set2 = new IntegerSet(SetB);
+//		ArrayList<Integer> SetA = new ArrayList<Integer>();
+//		SetA.add(1);
+//		SetA.add(2);
+//		SetA.add(3);
+//		SetA.add(6);
+//		
+//		ArrayList<Integer> SetB = new ArrayList<Integer>();
+//		SetB.add(1);
+//		SetB.add(2);
+//		SetB.add(6);
+//		SetB.add(7);
+		IntegerSet Set1 = new IntegerSet();
+		IntegerSet Set2 = new IntegerSet();
+		Set1.add(1);
+		Set1.add(2);
+		Set1.add(3);
+		Set1.add(6);
+		Set1.toString();
 		
 		String initialSet1 = Set1.toString();
 		System.out.println("Initial Set1 looks like: " + initialSet1);
@@ -122,12 +127,12 @@ public class main {
 		System.out.println("The union of Set1 and Set2: " + Set1.toString());
 		System.out.println("");
 		
-		Set1.intSetintersect(Set2);
+		Set1.intersect(Set2);
 		System.out.println("The intersect of Set1 and Set2: " + Set1.toString());
 		System.out.println("");
 		
 		
-		Set1.intSetdiff(Set2);
+		Set1.diff(Set2);
 		if (Set1.isEmpty()) {
 			System.out.println("The difference of Set1 and Set2 is empty.");
 		}
@@ -145,7 +150,7 @@ public class main {
 		System.out.println("Afer adding elements, Set2 looks like: " + Set2.toString());
 		System.out.println("");
 		
-		Set1.intSetdiff(Set2);
+		Set1.diff(Set2);
 		if (Set1.isEmpty()) {
 			System.out.println("The difference of Set1 and Set2 is empty.");
 		}
