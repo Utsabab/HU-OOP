@@ -1,8 +1,8 @@
 package org.howard.edu.lsp.assignment7.tollbooth;
 
 public class FordTruck implements Truck {
-	int axles;
-	int totalWeight;
+	private int axles;
+	private int totalWeight;
 	
 	public FordTruck(int axles, int totalWeight) {
         this.axles = axles;
