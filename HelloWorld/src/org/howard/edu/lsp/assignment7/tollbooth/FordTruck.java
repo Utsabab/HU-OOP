@@ -38,7 +38,7 @@ public class FordTruck implements Truck {
 	* 
 	* @return The int value of number of axles
 	*/
-    public int getTotalWeight() {
-    	return totalWeight;
+	public int getTotalWeight() {
+		return totalWeight;
     }
 }

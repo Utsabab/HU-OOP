@@ -38,7 +38,7 @@ public class NissanTruck implements Truck {
 	* 
 	* @return The int value of number of axles
 	*/
-    public int getTotalWeight() {
+	public int getTotalWeight() {
     	return totalWeight;
     }
 }
