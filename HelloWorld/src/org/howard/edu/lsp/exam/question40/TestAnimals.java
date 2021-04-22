@@ -6,6 +6,7 @@ import java.io.PrintStream;
 
 import org.junit.jupiter.api.AfterEach;
 import org.junit.jupiter.api.BeforeEach;
+import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 /**
@@ -34,6 +35,7 @@ public class TestAnimals {
 	 * Checks the received and expected integer value to confirm the function works properly.
 	 */
 	@Test
+	@DisplayName("Test cases for fly method from Goose class")
 	void testGooseFlying() {
 		Goose flying = new Goose();
 		flying.fly();	
@@ -47,6 +49,7 @@ public class TestAnimals {
 	 * Checks the received and expected integer value to confirm the function works properly.
 	 */
 	@Test 
+	@DisplayName("Test cases for fly method from Airplane class")
 	void testAirplaneFlying() {
 		Airplane flying = new Airplane();
 		flying.fly();	
@@ -60,6 +63,7 @@ public class TestAnimals {
 	 * Checks the received and expected integer value to confirm the function works properly.
 	 */
 	@Test
+	@DisplayName("Test cases for move method from Tiger class")
 	void testTigermoves() {
 		Tiger bengal = new Tiger();
 		bengal.move();
